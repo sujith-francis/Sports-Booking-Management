@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style type="text/css">
+
+  form,p  {    
+        width: 50%;
+        margin-left : 45%
+        
+    }
+
+</style>
+</head>
+
+<body  bgcolor="lightblue">
+<h1 align="center" style="color: red">Book Your Game </h1><br>
+<h2 align="center" style="color: blue">Sign in</h2>
+<form action="./controller/login" method="post">
+   <label for="loginType">Login as:</label>
+  <select id="loginType" name="loginType">
+      <option value="manager">Manager</option>
+    <option value="player">Player</option>
+
+  </select>
+  <br><br>
+
+  <label for="usermail">Email:</label>
+  <input type="text" id="usermail" name="usermail" placeholder="Enter your mail" required>
+  <br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter password" required>
+  <br>
+  <a href="forgetPassword.html" style="margin-left: 19%;font-size: 13.5px ;">Forget Password?</a>   <br>
+  <input type="submit" value="Login">
+</form>
+<!-- 
+<script type="text/javascript">
+  var loginType = document.getElementById("loginType");
+  var username = document.getElementById("username");
+  var password = document.getElementById("password");
+  
+  loginType.addEventListener("change", function() {
+    if (loginType.value === "Student") {
+      username.setAttribute("placeholder", "Enter roll number");
+      username.setAttribute("name", "student_id");
+     
+    } else {
+      username.setAttribute("placeholder", "Enter Librarian ID");
+    }
+  });
+</script>
+
+ -->
+<p>Don't Have an Account? <a href="register.html">Sign up</a></p>
+</body>
+
+</html>

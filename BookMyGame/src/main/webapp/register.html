@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<style type="text/css">
+form, p {
+	width: 50%;
+	margin-left: 40%
+}
+</style>
+</head>
+<body bgcolor="lightyellow">
+	<h1 align='center'>User Registration</h1>
+	<form action="./controller/getregisterpage" method="post">
+		<label for="name">Enter your Name: </label> <input type="text"
+			id="name" name="name" placeholder="Your Name" required><br><br>
+		<label for="signupType">SignUP as:</label>
+  <select id="signupType" name="signupType">
+      <option value="manager">Manager</option>
+    <option value="player">Player</option>
+
+  </select>
+  <br>
+		
+		<br> <input type="submit" value="getRegisterPage">
+
+
+
+	</form>
+
+	<p>
+		Already have an account? <a href="login.html">Login here</a>
+	</p>
+</body>
+</html>
